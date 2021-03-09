@@ -1,0 +1,34 @@
+.transform-180 {
+  transform: rotate(180deg);
+}
+
+.session-profissionais-poligon {
+  height: 25px;
+}
+
+.session-profissionais-hr,
+.session-profissionais-text-color {
+  color: #00cad6;
+  /* 00cad6 */
+}
+
+.color-1 {
+  background-color: #5edce4;
+}
+
+.color-2 {
+  background-color: #00afaf;
+}
+
+.color-3 {
+  background-color: #008085;
+}
+
+.color-4 {
+  background-color: #00799d;
+}
+
+.color-button {
+  color: #008085;
+  border-color: #008085;
+}

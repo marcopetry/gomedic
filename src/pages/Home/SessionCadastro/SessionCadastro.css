@@ -1,0 +1,23 @@
+.session-cadastro-background-color {
+  background-color: #f0f0ed;
+}
+
+.color-1 {
+  background-color: #5edce4;
+}
+
+.text-color-1 {
+  color: #5edce4;
+}
+
+.session-cadastro-background-color img {
+  mix-blend-mode: darken;
+}
+
+.w-35 {
+  width: 35% !important;
+}
+
+.h-2px {
+  height: 2px !important;
+}
