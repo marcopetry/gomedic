@@ -18,8 +18,10 @@ export const Header = () => {
         </div>
 
         <button className="btn btn-lg btn-outline-light bg-transparent mt-3 py-3 line-height-0-3em">
-          <h6>Agenda consulta</h6>
-          <span className="font-size-0-8em to-lower-case">para paciente com suspeita de COVID 19</span>
+          <div className="d-flex align-items-center flex-column">
+            <h6 className="text-uppercase">Agenda consulta</h6>
+            <span className="font-size-0-8em to-lower-case">para paciente com suspeita de COVID 19</span>
+          </div>
         </button>
       </div>
     </div>

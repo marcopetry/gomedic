@@ -1,3 +1,11 @@
+.session-profissionais-container-card {
+  height: 480px !important;
+}
+
 .session-profissionais-card-retangulo {
   border: 1px solid #fff;
+}
+
+.font-size-14 {
+  font-size: 14px;
 }
