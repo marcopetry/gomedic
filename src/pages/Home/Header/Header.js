@@ -1,7 +1,14 @@
-import React from 'react'
+import React, { useCallback } from 'react'
+import { useHistory } from 'react-router'
 import './Header.css'
 
 export const Header = () => {
+  const history = useHistory()
+
+  const redirectBanner = useCallback(() => {
+    history.push('/sintomas-covid')
+  }, [history])
+
   return (
     <div className="container-header">
       <div className="container-header-content">
@@ -14,7 +21,9 @@ export const Header = () => {
         <div className="container-header-content-clique-aqui d-flex flex-row align-items-center">
           <h2 className="fs-6">Clique no botão abaixo para agendar a sua consulta!</h2>
           <h3 className="fs-6 ms-2">Veja quais são os sintomas</h3>
-          <button className="btn ms-2 btn-sm">Clique aqui</button>
+          <button className="btn ms-2 btn-sm" onClick={redirectBanner}>
+            Clique aqui
+          </button>
         </div>
 
         <button className="btn btn-lg btn-outline-light bg-transparent mt-3 py-3 line-height-0-3em">
