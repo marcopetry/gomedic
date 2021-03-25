@@ -1,13 +1,14 @@
-import React, { useCallback } from 'react'
-import { useHistory } from 'react-router'
+import React, { useEffect } from 'react'
 import './Header.css'
 
-export const Header = () => {
-  const history = useHistory()
+export const Header = ({ setBannerOpen }) => {
+  useEffect(() => {
+    const [containerHeader] = document.getElementsByClassName('container-header')
+    const [containerHeaderContent] = document.getElementsByClassName('container-header-content')
 
-  const redirectBanner = useCallback(() => {
-    history.push('/sintomas-covid')
-  }, [history])
+    containerHeader.style.backgroundSize = `${containerHeader.clientWidth}px ${containerHeader.clientWidth * 0.3}px`
+    containerHeaderContent.style.height = `${containerHeader.clientWidth * 0.3}px`
+  }, [])
 
   return (
     <div className="container-header">
@@ -21,7 +22,7 @@ export const Header = () => {
         <div className="container-header-content-clique-aqui d-flex flex-row align-items-center">
           <h2 className="fs-6">Clique no botão abaixo para agendar a sua consulta!</h2>
           <h3 className="fs-6 ms-2">Veja quais são os sintomas</h3>
-          <button className="btn ms-2 btn-sm" onClick={redirectBanner}>
+          <button className="btn ms-2 btn-sm" onClick={() => setBannerOpen(true)}>
             Clique aqui
           </button>
         </div>

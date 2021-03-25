@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { Banner } from '../Banner/Banner'
 import { Footer } from './Footer/Footer'
 import { Header } from './Header'
 import { SessionCadastro } from './SessionCadastro/SessionCadastro'
@@ -7,9 +8,21 @@ import { SessionEnviarMensagem } from './SessionEnviarMensagem/SessionEnviarMens
 import { SessionProfissionais } from './SessionProfissionais'
 
 const Home = () => {
+  const [isBannerOpen, setBannerOpen] = useState(true)
+
+  useEffect(() => {
+    if (isBannerOpen) {
+      document.body.style.overflow = 'hidden'
+      document.querySelector('html').scrollTop = window.scrollY
+    } else {
+      document.body.style.overflow = 'scroll'
+    }
+  }, [isBannerOpen])
+
   return (
     <>
-      <Header />
+      {isBannerOpen && <Banner setBannerOpen={setBannerOpen} />}
+      <Header setBannerOpen={setBannerOpen} />
       <SessionProfissionais />
       <SessionCadastro />
       <SessionEnviarMensagem />
