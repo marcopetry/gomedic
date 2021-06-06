@@ -8,7 +8,7 @@ import { SessionEnviarMensagem } from './SessionEnviarMensagem/SessionEnviarMens
 import { SessionProfissionais } from './SessionProfissionais'
 
 const Home = () => {
-  const [isBannerOpen, setBannerOpen] = useState(true)
+  const [isBannerOpen, setBannerOpen] = useState(false)
 
   useEffect(() => {
     if (isBannerOpen) {
@@ -20,7 +20,7 @@ const Home = () => {
   }, [isBannerOpen])
 
   return (
-    <>
+    <div className="w-100 h-100 position-absolute">
       {isBannerOpen && <Banner setBannerOpen={setBannerOpen} />}
       <Header setBannerOpen={setBannerOpen} />
       <SessionProfissionais />
@@ -28,7 +28,7 @@ const Home = () => {
       <SessionEnviarMensagem />
       <SessionContatos />
       <Footer />
-    </>
+    </div>
   )
 }
 

@@ -18,31 +18,27 @@
 .session-profissionais-text-color {
   color: #00cad6;
 }
-/* 
-.color-1 {
-  background-color: #5edce4;
-}
-
-.color-2 {
-  background-color: #00afaf;
-}
-
-.color-3 {
-  background-color: #008085;
-}
-
-.color-4 {
-  background-color: #00799d;
-} */
 
 .color-button {
   color: #008085;
   border-color: #008085;
 }
 
+@media only screen and (max-width: 1200px) {
+  .session-profissionais-container-cards {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .session-profissionais-container-cards {
+    width: 60% !important;
+  }
+}
+
 .session-profissionais-container-cards {
   background-image: url(../../../assets/fundo-cards.png);
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 560px;
 }

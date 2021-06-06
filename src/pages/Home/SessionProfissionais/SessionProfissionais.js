@@ -14,8 +14,8 @@ export const SessionProfissionais = () => {
         <img src={poligon} alt="poligon" className="session-profissionais-poligon transform-180" />
         <div className="d-flex flex-column w-50">
           <div className="d-flex flex-column align-items-center">
-            <span className="session-profissionais-text-color">Marque sua consulta com os melhores</span>
-            <span className="text-uppercase fs-5">Profissionais</span>
+            <span className="session-profissionais-text-color font-small">Marque sua consulta com os melhores</span>
+            <span className="text-uppercase font-medium">Profissionais</span>
           </div>
           <hr className="session-profissionais-hr mx-5 my-0" />
           <hr className="session-profissionais-hr mt-0-2em mb-0" />
@@ -23,17 +23,17 @@ export const SessionProfissionais = () => {
         <img className="session-profissionais-poligon" src={poligon} alt="poligon" />
       </div>
 
-      <div className="session-profissionais-container-cards d-flex w-60 mt-5">
-        <SessionProfissionaisCard title="Clínicos Gerais" icon={clinicoIcon} /* className="color-1" */>
+      <div className="session-profissionais-container-cards d-flex mt-5">
+        <SessionProfissionaisCard title="Clínicos Gerais" icon={clinicoIcon}>
           Com ampla capacitação em diversas áreas da Medicina. Trabalham habitualmente nos Cuidados da Saúde Primários.
         </SessionProfissionaisCard>
-        <SessionProfissionaisCard title="Médicos Especialistas" icon={aparelhoMedicoIcon} /* className="color-2" */>
+        <SessionProfissionaisCard title="Médicos Especialistas" icon={aparelhoMedicoIcon}>
           Especialistas que atuam em áreas especificas, atendem em Clínicas Médicas ou na Medicina Interna.
         </SessionProfissionaisCard>
-        <SessionProfissionaisCard title="Dentistas" icon={denteIcon} /* className="color-3" */>
+        <SessionProfissionaisCard title="Dentistas" icon={denteIcon}>
           Responsáveis por cuidar da saúde bucal em geral e implantodentistas especializados.
         </SessionProfissionaisCard>
-        <SessionProfissionaisCard title="Terapeutas" icon={planilhaMedicaIcon} /* className="color-4" */>
+        <SessionProfissionaisCard title="Terapeutas" icon={planilhaMedicaIcon}>
           Profissionais das áreas de psicologia, fisioterapia, ortopedia, fonoaudiologia, terapias naturais e outras.
         </SessionProfissionaisCard>
       </div>

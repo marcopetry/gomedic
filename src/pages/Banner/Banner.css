@@ -2,8 +2,7 @@
   height: 100%;
   width: 100%;
   z-index: 9999;
-  position: absolute;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,13 +11,11 @@
 
 .banner-content {
   background-color: #3095c3;
-  /* box-shadow: 10000px 10000px 500px 10000px rgba(0, 0, 0, 0.7); */
   background-image: url(../../assets/banner-background.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 50%;
   width: 50%;
-  /* opacity: 0.7; */
 }
 
 .bg-custom {

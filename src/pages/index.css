@@ -1,0 +1,91 @@
+/* ##### MOBILE */
+@media only screen and (max-width: 577px) {
+  .font-xlarge {
+    font-size: 18px !important;
+  }
+
+  .font-large {
+    font-size: 15px !important;
+  }
+
+  .font-medium {
+    font-size: 12px !important;
+  }
+
+  .font-small {
+    font-size: 9px !important;
+  }
+
+  .font-xsmall {
+    font-size: 6px !important;
+  }
+}
+
+/* ##### WEB TELA BAIXA RESOLUÇÃO */
+@media only screen and (min-width: 577px) {
+  .font-xlarge {
+    font-size: 24px !important;
+  }
+
+  .font-large {
+    font-size: 20px !important;
+  }
+
+  .font-medium {
+    font-size: 16px !important;
+  }
+
+  .font-small {
+    font-size: 12px !important;
+  }
+
+  .font-xsmall {
+    font-size: 8px !important;
+  }
+}
+
+/* ##### WEB TELA RESOLUÇÃO MEDIA */
+@media only screen and (min-width: 993px) {
+  .font-xlarge {
+    font-size: 32px !important;
+  }
+
+  .font-large {
+    font-size: 26px !important;
+  }
+
+  .font-medium {
+    font-size: 20px !important;
+  }
+
+  .font-small {
+    font-size: 14px !important;
+  }
+
+  .font-xsmall {
+    font-size: 10px !important;
+  }
+}
+
+/* ##### WEB TELA ALTA RESOLUÇÃO */
+@media only screen and (min-width: 1201px) {
+  .font-xlarge {
+    font-size: 48px !important;
+  }
+
+  .font-large {
+    font-size: 36px !important;
+  }
+
+  .font-medium {
+    font-size: 24px !important;
+  }
+
+  .font-small {
+    font-size: 16px !important;
+  }
+
+  .font-xsmall {
+    font-size: 12px !important;
+  }
+}
